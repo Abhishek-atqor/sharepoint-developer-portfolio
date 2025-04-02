@@ -1,0 +1,33 @@
+#spLeftNav{
+    display:none;
+  }
+.CanvasZone>div {
+    max-width: 100% !important
+}
+
+#spCommandBar {
+    display: none;
+}
+#spSiteHeader{
+    display: none;
+}
+/* 
+div[data-automation-id="contentScrollRegion"]{
+    height: 500px !important;
+    max-height: 500px !important;
+} */
+
+/* div[data-automation-id="CanvasControl"] div div{
+    background: red;
+    padding: 10px;
+    height: 300px;
+    max-height: 300px;
+} */
+
+.MuiPaper-elevation div:nth-child(2){
+    max-height: 450px !important;
+}
+
+.Basicskillssearch input{
+    padding: 5px !important;
+}

@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "16.18.1",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.12.0"
+    },
+    "version": "1.18.2",
+    "libraryName": "resource-information-dashboard",
+    "libraryId": "41a20419-e8eb-4ad9-a049-f5f49ce6dce5",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "ResourceInformationDashboard",
+    "solutionShortDescription": "ResourceInformationDashboard description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

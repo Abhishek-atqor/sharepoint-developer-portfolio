@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "resource-information-dashboard-client-side-solution",
+    "id": "41a20419-e8eb-4ad9-a049-f5f49ce6dce5",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.18.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "ResourceInformationDashboard description"
+      },
+      "longDescription": {
+        "default": "ResourceInformationDashboard description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "resource-information-dashboard Feature",
+        "description": "The feature that activates elements of the resource-information-dashboard solution.",
+        "id": "a97502d4-ac85-44d5-9aab-0a5c8cfc6a62",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/resource-information-dashboard.sppkg"
+  }
+}

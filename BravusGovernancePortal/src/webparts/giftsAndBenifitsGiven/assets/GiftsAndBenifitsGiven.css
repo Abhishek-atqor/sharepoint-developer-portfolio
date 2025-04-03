@@ -1,0 +1,326 @@
+.gift-form-container {
+  /* max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  margin-top: -70px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2%;
+}
+
+.ms-TextField,
+.ms-DatePicker {
+  width: 32%;
+}
+
+
+.ms-DatePicker .ms-TextField {
+  width: 100%;
+}
+
+/* Header styles */
+.gift-form-h2 {
+  background: #ecf1f5;
+  border-bottom: 2px solid #0064af;
+  color: #000 !important;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  margin: 15px 0 15px;
+  padding: 10px 0 15px 8px;
+  width: 100%;
+}
+
+/* Form field styles */
+.form-field {
+  margin-bottom: 15px;
+}
+
+.form-field label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-field input,
+.form-field .ms-DatePicker {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Section header styles */
+.section-header {
+  background: #ecf1f5;
+  border-bottom: 2px solid #0064af;
+  color: #000 !important;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  margin: 15px 0 15px;
+  padding: 10px 0 15px 8px;
+  width: 100%;
+}
+
+/* Declaration text styles */
+.declaration-text {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+/* Checkbox styles */
+.ms-Checkbox {
+  margin-bottom: 15px;
+}
+
+.ms-Checkbox label {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Table styles */
+
+.gift-table-wrapper {
+  max-width: 1920px;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+.gift-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.gift-table th,
+.gift-table td {
+  min-width: 158px;
+  width: 200px;
+}
+
+.gift-table th:first-child,
+.gift-table td:first-child {
+  min-width: 158px;
+  width: 200px;
+}
+
+
+.gift-table th:last-child,
+.gift-table td:last-child {
+  min-width: 82px;
+  width: 83px;
+}
+
+.gift-table td:nth-child(7),
+.gift-table th:nth-child(7){
+  min-width: 82px;
+  width: 83px;
+}
+
+.gift-table .ms-DatePicker,
+.gift-table .ms-TextField {
+  width: 100%;
+}
+
+/* .gift-table th {} */
+
+.gift-table td {
+  background-color: #fff;
+}
+
+/* Button styles */
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button-group button {
+  background-color: #0064af;
+  border: 1px solid #0064af;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-family: Segoe UI;
+  margin-right: 10px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.submit-button,
+.draft-button,
+.cancel-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+.draft-button {
+  background-color: #2196F3;
+  color: white;
+}
+
+.draft-button:hover {
+  background-color: #1e88e5;
+}
+
+.cancel-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.cancel-button:hover {
+  background-color: #e53935;
+}
+
+/* Add and remove button styles */
+.add-btn,
+.remove-btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.add-btn:hover {
+  background-color: #45a049;
+}
+
+.remove-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.remove-btn:hover {
+  background-color: #e53935;
+}
+
+.error-message {
+  color: rgb(164, 38, 44);
+  /* Set the text color to red */
+  font-size: 12px;
+  /* Optional: Adjust font size */
+  margin-top: 4px;
+  /* Optional: Add some spacing */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* Black background with 50% opacity */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  /* Ensure the loader is on top of other elements */
+}
+
+.loader {
+  text-align: center;
+  background-color: white;
+  /* Optionally, add a white background for the loader */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.loader img {
+  width: 80px;
+  /* Adjust the size of the loader image as needed */
+  height: 90px;
+}
+
+.ms-Checkbox .ms-Checkbox-label {
+  display: flex;
+}
+
+.section-header-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2%;
+}
+
+.checkboxWrapper {
+  width: 32%;
+  display: flex;
+  column-gap: 10px;
+}
+
+
+.datePickerWrapper{
+  width: 32%;
+}
+
+.datePickerWrapper .ms-DatePicker{
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+
+@media (max-width: 1023px) {
+  .gift-form-container {
+    margin-left: 50px;
+
+  }
+}
+
+@media (max-width: 768px) {
+
+  .ms-DatePicker,
+  .ms-TextField,
+  .ms-Checkbox {
+    width: 48.9%;
+  }
+
+
+}
+
+@media (max-width: 576px) {
+
+  .ms-DatePicker,
+  .ms-TextField,
+  .ms-Checkbox {
+    width: 100%;
+  }
+
+  .button-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .button-group button {
+    width: 100%;
+    margin: 0;
+  }
+}

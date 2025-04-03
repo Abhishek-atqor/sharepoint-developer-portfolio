@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "bravus-governance-portal-client-side-solution",
+    "id": "9be9e1de-cf18-4123-8cd8-7f0c7b6ffb2f",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.18.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "BravusGovernancePortal description"
+      },
+      "longDescription": {
+        "default": "BravusGovernancePortal description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "bravus-governance-portal Feature",
+        "description": "The feature that activates elements of the bravus-governance-portal solution.",
+        "id": "d8e6cbea-2cc2-4585-9690-a60f4349ce7d",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/bravus-governance-portal.sppkg"
+  }
+}

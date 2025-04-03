@@ -1,0 +1,100 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "bravus-governance-portal-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/bravusGovernancePortal/BravusGovernancePortalWebPart.js",
+          "manifest": "./src/webparts/bravusGovernancePortal/BravusGovernancePortalWebPart.manifest.json"
+        }
+      ]
+    },
+    "conflict-of-interest-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/conflictOfInterest/ConflictOfInterestWebPart.js",
+          "manifest": "./src/webparts/conflictOfInterest/ConflictOfInterestWebPart.manifest.json"
+        }
+      ]
+    },
+    "gifts-and-benefits-rceived-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/giftsAndBenefitsRceived/GiftsAndBenefitsRceivedWebPart.js",
+          "manifest": "./src/webparts/giftsAndBenefitsRceived/GiftsAndBenefitsRceivedWebPart.manifest.json"
+        }
+      ]
+    },
+    "gifts-and-benifits-given-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/giftsAndBenifitsGiven/GiftsAndBenifitsGivenWebPart.js",
+          "manifest": "./src/webparts/giftsAndBenifitsGiven/GiftsAndBenifitsGivenWebPart.manifest.json"
+        }
+      ]
+    },
+    "governance-dashboard-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/governanceDashboard/GovernanceDashboardWebPart.js",
+          "manifest": "./src/webparts/governanceDashboard/GovernanceDashboardWebPart.manifest.json"
+        }
+      ]
+    },
+    "quick-links-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/quickLinks/QuickLinksWebPart.js",
+          "manifest": "./src/webparts/quickLinks/QuickLinksWebPart.manifest.json"
+        }
+      ]
+    },
+    "news-events-webpart-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/newsEventsWebpart/NewsEventsWebpartWebPart.js",
+          "manifest": "./src/webparts/newsEventsWebpart/NewsEventsWebpartWebPart.manifest.json"
+        }
+      ]
+    },
+    "events-web-part-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/eventsWebPart/EventsWebPartWebPart.js",
+          "manifest": "./src/webparts/eventsWebPart/EventsWebPartWebPart.manifest.json"
+        }
+      ]
+    },
+    "risk-register-webpart-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/riskRegisterWebpart/RiskRegisterWebpartWebPart.js",
+          "manifest": "./src/webparts/riskRegisterWebpart/RiskRegisterWebpartWebPart.manifest.json"
+        }
+      ]
+    },
+    "audit-compliance-webpart-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/auditComplianceWebpart/AuditComplianceWebpartWebPart.js",
+          "manifest": "./src/webparts/auditComplianceWebpart/AuditComplianceWebpartWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "BravusGovernancePortalWebPartStrings": "lib/webparts/bravusGovernancePortal/loc/{locale}.js",
+    "ConflictOfInterestWebPartStrings": "lib/webparts/conflictOfInterest/loc/{locale}.js",
+    "GiftsAndBenefitsRceivedWebPartStrings": "lib/webparts/giftsAndBenefitsRceived/loc/{locale}.js",
+    "GiftsAndBenifitsGivenWebPartStrings": "lib/webparts/giftsAndBenifitsGiven/loc/{locale}.js",
+    "GovernanceDashboardWebPartStrings": "lib/webparts/governanceDashboard/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "QuickLinksWebPartStrings": "lib/webparts/quickLinks/loc/{locale}.js",
+    "NewsEventsWebpartWebPartStrings": "lib/webparts/newsEventsWebpart/loc/{locale}.js",
+    "EventsWebPartWebPartStrings": "lib/webparts/eventsWebPart/loc/{locale}.js",
+    "RiskRegisterWebpartWebPartStrings": "lib/webparts/riskRegisterWebpart/loc/{locale}.js",
+    "AuditComplianceWebpartWebPartStrings": "lib/webparts/auditComplianceWebpart/loc/{locale}.js"
+  }
+}

@@ -1,0 +1,187 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.conflictOfInterest {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+}
+
+.welcome {
+  text-align: center;
+}
+
+.welcomeImage {
+  width: 100%;
+  max-width: 420px;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: "[theme:link, default:#03787c]";
+    color: var(--link); // note: CSS Custom Properties support is limited to modern browsers only
+
+    &:hover {
+      text-decoration: underline;
+      color: "[theme:linkHovered, default: #014446]";
+      color: var(--linkHovered); // note: CSS Custom Properties support is limited to modern browsers only
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* Black background with 50% opacity */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  /* Ensure the loader is on top of other elements */
+}
+
+.loader {
+  text-align: center;
+  // background-color: white; /* Optionally, add a white background for the loader */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.loader img {
+  width: 80px;
+  /* Adjust the size of the loader image as needed */
+  height: 90px;
+}
+
+.formDetailWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2%;
+}
+
+.formDetail {
+  width: 32%;
+
+
+  label {
+    color: #0064af;
+    font-family: Segoe UI;
+  }
+}
+
+.section2Wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2%;
+
+  h3 {
+    width: 100%;
+  }
+
+  &>div {
+    width: 32%;
+  }
+}
+
+.section3Wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2%;
+  span{
+    p{
+      margin-top: 5px;
+    }
+  }
+
+  h3,
+  p {
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  &>div {
+    width: 32%;
+  }
+}
+
+.btnWrapper {
+  button {
+    background-color: #0064af;
+    border: 1px solid #0064af;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-family: Segoe UI;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    margin-right: 10px;
+  }
+
+}
+
+.Conflictofintrest {
+  margin-top: -90px;
+
+  h3{
+    background: #ecf1f5;
+    border-bottom: 2px solid #0064af;
+    color: #000 !important;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    margin: 15px 0 15px;
+    padding: 10px 0 15px 8px;
+  }
+}
+
+
+@media (max-width: 1023px) {
+  .Conflictofintrest {
+    margin-left: 50px;
+
+  }
+}
+
+@media (max-width: 768px) {
+
+  .formDetail,
+  .section2Wrapper>div,
+  section3Wrapper>div {
+    width: 48.9%;
+  }
+
+  .formDetailWrapper,
+  .section2Wrapper,
+  .section3Wrapper {
+    row-gap: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .formDetail,
+  .section2Wrapper>div,
+  .section3Wrapper>div {
+    width: 100%;
+  }
+
+  .btnWrapper {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    button {
+      margin-right: 0;
+    }
+  }
+}

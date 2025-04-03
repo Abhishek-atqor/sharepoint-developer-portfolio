@@ -1,0 +1,49 @@
+.ant-table-wrapper {
+    overflow-x: scroll;
+     overflow-y: scroll;
+        padding: 10px;
+    }
+/* Custom Styles for Ant Design Tabs */
+/* .custom-tabs .ant-tabs-nav {
+    background-color: #f0f2f5; 
+    border-radius: 8px;
+    padding: 8px;
+  }
+  
+  .custom-tabs .ant-tabs-tab {
+    font-weight: 600;
+    color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-tabs .ant-tabs-tab:hover {
+    color: #1890ff; 
+  }
+  
+  .custom-tabs .ant-tabs-tab-active {
+    color: #fff !important;
+    background-color: #1890ff !important;
+    border-radius: 5px;
+  }
+  
+
+  .custom-table .ant-table {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-table .ant-table-thead > tr > th {
+    background-color: #1890ff;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .custom-table .ant-table-tbody > tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .custom-table .ant-table-tbody > tr:hover {
+    background-color: #e6f7ff;
+  }
+   */

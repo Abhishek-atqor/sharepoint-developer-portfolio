@@ -1,0 +1,187 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.quickLinks {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+}
+
+.welcome {
+  text-align: center;
+}
+
+.welcomeImage {
+  width: 100%;
+  max-width: 420px;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: "[theme:link, default:#03787c]";
+    color: var(--link); // note: CSS Custom Properties support is limited to modern browsers only
+
+    &:hover {
+      text-decoration: underline;
+      color: "[theme:linkHovered, default: #014446]";
+      color: var(--linkHovered); // note: CSS Custom Properties support is limited to modern browsers only
+    }
+  }
+}
+.quickLinksWrapper {
+  width: 100%;
+
+  // background-color: #f4f4f4;
+  border-radius: 10px;
+  margin-top: -60px;
+}
+
+.headingWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.heading {
+  color: #333;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: left;
+  margin: 0;
+}
+
+.quickLinksContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  /* Title on left, image on right */
+  align-items: center;
+  background: #ffffff;
+  border-radius: 0px;
+  padding: 10px 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
+  width: 31.6%;
+  /* Ensures 3 cards in a row on large screens */
+  min-width: 300px;
+  /* Maintain min width */
+  cursor: pointer;
+  border: 1px solid #0078d4 !important;
+  flex-shrink: 0;
+  /* Prevent shrinking */
+  border-bottom: 5px solid #0078d4 !important;
+  box-sizing: border-box;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  /* Highlight border on hover */
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  flex: 1;
+  /* Push image to the right */
+}
+
+.imageContainer {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 50px;
+  background: #0078d4;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 100%;
+  filter: brightness(0) invert(1);
+
+}
+
+.placeholder {
+  width: 50px;
+  height: 50px;
+  background: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-size: 12px;
+  border-radius: 6px;
+}
+
+.addNewLink {
+  font-size: 14px;
+  color: #0078d4;
+  /* SharePoint blue */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.addNewLink:hover {
+  background-color: #0078d4;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .card {
+    width: 48%;
+    /* Show 2 per row on medium screens */
+  }
+}
+
+
+@media (max-width: 912px) {
+ 
+  .quickLinksWrapper {
+    margin-left: 50px;
+    width: calc(100% - 50px);
+  }
+  .card {
+    width: 47.8%;
+}
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    /* Stack all cards in one column on small screens */
+  }
+}
+
+
+@media (max-width: 576px) {
+
+  .card {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    min-width: auto;
+  }
+
+  .quickLinksWrapper {
+    margin-left: 35px;
+    width: calc(100% - 20px);
+  }
+}

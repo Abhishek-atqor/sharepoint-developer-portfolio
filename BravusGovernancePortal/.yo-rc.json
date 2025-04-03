@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": false,
+    "nodeVersion": "16.18.1",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.12.0"
+    },
+    "version": "1.18.2",
+    "libraryName": "bravus-governance-portal",
+    "libraryId": "9be9e1de-cf18-4123-8cd8-7f0c7b6ffb2f",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "BravusGovernancePortal",
+    "solutionShortDescription": "BravusGovernancePortal description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

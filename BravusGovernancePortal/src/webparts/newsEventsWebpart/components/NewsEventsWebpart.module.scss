@@ -1,0 +1,151 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.newsEventsWebpart {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+}
+
+.welcome {
+  text-align: center;
+}
+
+.welcomeImage {
+  width: 100%;
+  max-width: 420px;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: "[theme:link, default:#03787c]";
+    color: var(--link); // note: CSS Custom Properties support is limited to modern browsers only
+
+    &:hover {
+      text-decoration: underline;
+      color: "[theme:linkHovered, default: #014446]";
+      color: var(--linkHovered); // note: CSS Custom Properties support is limited to modern browsers only
+    }
+  }
+}
+
+.newsEventsContainer {
+  padding: 0px;
+  padding-top: 0;
+}
+
+.heading {
+  color: #333;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0;
+  text-align: left;
+}
+
+.newsEventsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+.card {
+  width: 48%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background: #fff;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  /* Slight lift effect */
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.imageContainer {
+  width: 100%;
+  height: 200px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.imageContainer:hover .image {
+  transform: scale(1.1);
+  /* Zoom effect on hover */
+}
+
+.content {
+  padding: 15px;
+  text-align: left;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+}
+
+.description {
+  font-size: 14px;
+  color: #666;
+  margin-top: 0;
+}
+
+.addNewEventLink {
+  font-size: 14px;
+  color: #0078d4;
+  /* SharePoint blue */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.addNewEventLink:hover {
+  text-decoration: underline;
+}
+
+.headingWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+
+@media (max-width: 912px) {
+  .newsEventsContainer {
+      margin-left: 50px;
+      width: calc(100% - 50px);
+      margin-top: -45px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .newsEventsContainer {
+      margin-left: 35px;
+      width: calc(100% - 20px);
+  }
+
+  .newsEventsList{
+    row-gap: 20px;
+  }
+  .card{
+    width: 100%;
+  }
+
+}

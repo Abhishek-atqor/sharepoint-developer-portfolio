@@ -1,0 +1,218 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "product-intranet-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/productIntranet/ProductIntranetWebPart.js",
+          "manifest": "./src/webparts/productIntranet/ProductIntranetWebPart.manifest.json"
+        }
+      ]
+    },
+    "event-list-web-part-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/eventListWebPart/EventListWebPartWebPart.js",
+          "manifest": "./src/webparts/eventListWebPart/EventListWebPartWebPart.manifest.json"
+        }
+      ]
+    },
+    "side-carousal-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/sideCarousal/SideCarousalWebPart.js",
+          "manifest": "./src/webparts/sideCarousal/SideCarousalWebPart.manifest.json"
+        }
+      ]
+    },
+    "carousal-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/carousal/CarousalWebPart.js",
+          "manifest": "./src/webparts/carousal/CarousalWebPart.manifest.json"
+        }
+      ]
+    },
+    "banner-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/banner/BannerWebPart.js",
+          "manifest": "./src/webparts/banner/BannerWebPart.manifest.json"
+        }
+      ]
+    },
+    "tip-tricks-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/tipTricks/TipTricksWebPart.js",
+          "manifest": "./src/webparts/tipTricks/TipTricksWebPart.manifest.json"
+        }
+      ]
+    },
+    "tickets-webpart-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/ticketsWebpart/TicketsWebpartWebPart.js",
+          "manifest": "./src/webparts/ticketsWebpart/TicketsWebpartWebPart.manifest.json"
+        }
+      ]
+    },
+    "event-picker-webpart-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/eventPickerWebpart/EventPickerWebpartWebPart.js",
+          "manifest": "./src/webparts/eventPickerWebpart/EventPickerWebpartWebPart.manifest.json"
+        }
+      ]
+    },
+    "tickets-detail-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/ticketsDetail/TicketsDetailWebPart.js",
+          "manifest": "./src/webparts/ticketsDetail/TicketsDetailWebPart.manifest.json"
+        }
+      ]
+    },
+    "quick-link-webpart-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/quickLinkWebpart/QuickLinkWebpartWebPart.js",
+          "manifest": "./src/webparts/quickLinkWebpart/QuickLinkWebpartWebPart.manifest.json"
+        }
+      ]
+    },
+    "birthday-anniversary-webpart-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/birthdayAnniversaryWebpart/BirthdayAnniversaryWebpartWebPart.js",
+          "manifest": "./src/webparts/birthdayAnniversaryWebpart/BirthdayAnniversaryWebpartWebPart.manifest.json"
+        }
+      ]
+    },
+    "excel-to-sp-list-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/excelToSpList/ExcelToSpListWebPart.js",
+          "manifest": "./src/webparts/excelToSpList/ExcelToSpListWebPart.manifest.json"
+        }
+      ]
+    },
+    "project-timeline-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/projectTimeline/ProjectTimelineWebPart.js",
+          "manifest": "./src/webparts/projectTimeline/ProjectTimelineWebPart.manifest.json"
+        }
+      ]
+    },
+    "training-certification-tracker-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/trainingCertificationTracker/TrainingCertificationTrackerWebPart.js",
+          "manifest": "./src/webparts/trainingCertificationTracker/TrainingCertificationTrackerWebPart.manifest.json"
+        }
+      ]
+    },
+    "advent-calendar-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/adventCalendar/AdventCalendarWebPart.js",
+          "manifest": "./src/webparts/adventCalendar/AdventCalendarWebPart.manifest.json"
+        }
+      ]
+    },
+    "timer-web-part-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/timerWebPart/TimerWebPartWebPart.js",
+          "manifest": "./src/webparts/timerWebPart/TimerWebPartWebPart.manifest.json"
+        }
+      ]
+    },
+    "hrl-leadership-web-part-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/hrlLeadershipWebPart/HrlLeadershipWebPartWebPart.js",
+          "manifest": "./src/webparts/hrlLeadershipWebPart/HrlLeadershipWebPartWebPart.manifest.json"
+        }
+      ]
+    },
+    "corporate-announcements-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/corporateAnnouncements/CorporateAnnouncementsWebPart.js",
+          "manifest": "./src/webparts/corporateAnnouncements/CorporateAnnouncementsWebPart.manifest.json"
+        }
+      ]
+    },
+    "dynamic-forms-builder-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/dynamicFormsBuilder/DynamicFormsBuilderWebPart.js",
+          "manifest": "./src/webparts/dynamicFormsBuilder/DynamicFormsBuilderWebPart.manifest.json"
+        }
+      ]
+    },
+    "group-search-web-part-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/groupSearchWebPart/GroupSearchWebPartWebPart.js",
+          "manifest": "./src/webparts/groupSearchWebPart/GroupSearchWebPartWebPart.manifest.json"
+        }
+      ]
+    },
+    "graph-api-webpart-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/graphApiWebpart/GraphApiWebpartWebPart.js",
+          "manifest": "./src/webparts/graphApiWebpart/GraphApiWebpartWebPart.manifest.json"
+        }
+      ]
+    },
+    "onboarding-roadmap-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/onboardingRoadmap/OnboardingRoadmapWebPart.js",
+          "manifest": "./src/webparts/onboardingRoadmap/OnboardingRoadmapWebPart.manifest.json"
+        }
+      ]
+    },
+    "my-multi-step-form-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/myMultiStepForm/MyMultiStepFormWebPart.js",
+          "manifest": "./src/webparts/myMultiStepForm/MyMultiStepFormWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ProductIntranetWebPartStrings": "lib/webparts/productIntranet/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js",
+    "EventListWebPartWebPartStrings": "lib/webparts/eventListWebPart/loc/{locale}.js",
+    "SideCarousalWebPartStrings": "lib/webparts/sideCarousal/loc/{locale}.js",
+    "CarousalWebPartStrings": "lib/webparts/carousal/loc/{locale}.js",
+    "BannerWebPartStrings": "lib/webparts/banner/loc/{locale}.js",
+    "TipTricksWebPartStrings": "lib/webparts/tipTricks/loc/{locale}.js",
+    "TicketsWebpartWebPartStrings": "lib/webparts/ticketsWebpart/loc/{locale}.js",
+    "EventPickerWebpartWebPartStrings": "lib/webparts/eventPickerWebpart/loc/{locale}.js",
+    "TicketsDetailWebPartStrings": "lib/webparts/ticketsDetail/loc/{locale}.js",
+    "QuickLinkWebpartWebPartStrings": "lib/webparts/quickLinkWebpart/loc/{locale}.js",
+    "BirthdayAnniversaryWebpartWebPartStrings": "lib/webparts/birthdayAnniversaryWebpart/loc/{locale}.js",
+    "ExcelToSpListWebPartStrings": "lib/webparts/excelToSpList/loc/{locale}.js",
+    "ProjectTimelineWebPartStrings": "lib/webparts/projectTimeline/loc/{locale}.js",
+    "TrainingCertificationTrackerWebPartStrings": "lib/webparts/trainingCertificationTracker/loc/{locale}.js",
+    "AdventCalendarWebPartStrings": "lib/webparts/adventCalendar/loc/{locale}.js",
+    "TimerWebPartWebPartStrings": "lib/webparts/timerWebPart/loc/{locale}.js",
+    "HrlLeadershipWebPartWebPartStrings": "lib/webparts/hrlLeadershipWebPart/loc/{locale}.js",
+    "CorporateAnnouncementsWebPartStrings": "lib/webparts/corporateAnnouncements/loc/{locale}.js",
+    "DynamicFormsBuilderWebPartStrings": "lib/webparts/dynamicFormsBuilder/loc/{locale}.js",
+    "GroupSearchWebPartWebPartStrings": "lib/webparts/groupSearchWebPart/loc/{locale}.js",
+    "GraphApiWebpartWebPartStrings": "lib/webparts/graphApiWebpart/loc/{locale}.js",
+    "OnboardingRoadmapWebPartStrings": "lib/webparts/onboardingRoadmap/loc/{locale}.js",
+    "MyMultiStepFormWebPartStrings": "lib/webparts/myMultiStepForm/loc/{locale}.js"
+  }
+}

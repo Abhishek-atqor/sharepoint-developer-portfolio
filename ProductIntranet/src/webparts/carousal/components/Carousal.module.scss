@@ -1,0 +1,213 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.welcome {
+  text-align: center;
+}
+
+.welcomeImage {
+  width: 100%;
+  max-width: 420px;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: "[theme:link, default:#03787c]";
+    color: var(--link); // note: CSS Custom Properties support is limited to modern browsers only
+
+    &:hover {
+      text-decoration: underline;
+      color: "[theme:linkHovered, default: #014446]";
+      color: var(--linkHovered); // note: CSS Custom Properties support is limited to modern browsers only
+    }
+  }
+}
+
+.carousalContainer {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px; /* Rounded corners for sleek look */
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.carousalItem {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  text-align: left; /* Align text to the left */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 10px;
+}
+
+.overlay {
+  background: linear-gradient(179deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.408000700280112) 30%, rgba(255, 255, 255, 0) 100%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.prevButton, 
+.nextButton {
+  position: absolute;
+  top: 50%; 
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6); 
+  border: none;
+  padding: 15px;
+  color: white; 
+  font-size: 50px; 
+  cursor: pointer;
+  border-radius: 50%; 
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.prevButton {
+  left: 20px;
+}
+
+.nextButton {
+  right: 20px;
+}
+
+.prevButton:focus, 
+.nextButton:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8); 
+}
+
+.ms-Icon {
+  font-size: 25px; /* Chevron icon size */
+}
+
+.readMoreLink {
+  display: inline-block;
+  margin-top: 10px; 
+  font-size: 1rem; 
+  font-weight: bold;
+  color: #043776; 
+  text-decoration: none; 
+
+  /* Transition for hover effect */
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+
+  &:hover {
+    color: #021c3b; 
+    text-decoration: underline; 
+  }
+}
+
+.slickDots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  gap: 10px; 
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.4); 
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+.dot:hover {
+  background-color: rgba(255, 255, 255, 0.7); 
+}
+
+.activeDot {
+  background-color: #ffffff; 
+  transform: scale(1.3); 
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); 
+}
+
+
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .prevButton, .nextButton {
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .prevButton {
+    left: 10px;
+  }
+
+  .nextButton {
+    right: 10px; 
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .overlay h3 {
+    font-size: 1.5rem;
+  }
+
+  .overlay p {
+    font-size: 1rem;
+  }
+
+  .prevButton, .nextButton {
+    padding: 15px;
+    font-size: 30px;
+  }
+}
+
+.spinnerContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+
+
+

@@ -1,0 +1,83 @@
+.button-container {
+    display: flex;
+    justify-content: space-between;
+
+  
+  }
+
+  .container button{
+    border-radius: 5px;
+  }
+  
+  /* Styling for individual buttons */
+  .ms-Button.root {
+    width: 50%; /* Set the button width to 50% of the container width */
+  }
+  
+  /* Styling for the record container with fixed height and scrollbar */
+  .record-container {
+    height: 416px;
+    overflow-y: auto;
+    padding: 8px;
+    background: #eaf8fb;
+    border-radius: 5px;
+  }
+  
+  /* Styling for the scrollable content within the record container */
+  /* .record-scroll-container {
+
+  }
+   */
+  /* Styling for individual record items */
+  .record-item {
+    display: flex;
+    align-items: center;
+    padding: 4px 0;
+  }
+  
+  /* Styling for the user avatar image */
+  .record-item img {
+    width: 43px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  /* Styling for the details of the records */
+  .record-details {
+    flex-grow: 1;
+    text-transform: uppercase;
+  }
+  .record-list{
+    list-style-type: none;
+    padding-left: 20px !important;
+  }
+  /* .CanvasZone > div {max-width:100% !important} */
+
+  .ms-Button--default{
+    border: none !important;
+  }
+
+  .ms-Button--default:hover{
+    background-color: lightblue;
+  }
+  .birthdayWrapper{
+    height: 450px !important;
+    border: 1px solid #bbb !important;
+    border-radius: 4px;
+  }
+  .noDataFound img{
+    display: block!important;
+    margin: auto!important;
+    height: 388px !important;
+  }
+
+
+@media screen and (max-width: 414px) {
+.noDataFound img {
+width: 100% !important;
+}
+}
+
+
+
+

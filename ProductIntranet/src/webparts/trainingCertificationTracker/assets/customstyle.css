@@ -1,0 +1,35 @@
+/* Custom styles for the Training Certification Tracker */
+.training-certifications-container {
+    padding: 20px;
+  }
+  
+  .training-certifications-container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .training-certifications-container th, .training-certifications-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .training-certifications-container th {
+    background-color: #f2f2f2;
+  }
+  
+  .training-certifications-container .expired {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  .training-certifications-container .success {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .training-certifications-container .warning {
+    background-color: #fff3cd;
+    color: #856404;
+  }
+  

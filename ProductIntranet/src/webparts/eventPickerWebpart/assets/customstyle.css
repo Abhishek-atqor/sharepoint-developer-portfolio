@@ -1,0 +1,118 @@
+.eventPickerWebpart {
+  align-items: normal;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #0078d4; /* Primary theme color */
+  }
+.datepicker{
+  margin-left: auto;
+}
+  .datePickerContainer {
+    display: flex;
+    justify-content: flex-end; /* Push DatePicker to the right */
+    width: 100%; /* Ensure it spans the full width of the container */
+    margin-bottom: 1.5rem; /* Space below the DatePicker */
+    padding: 0 1rem; /* Add padding to avoid touching edges */
+  }
+
+  .eventsContainer {
+    margin-top: 2rem;
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+  }
+
+  .cardGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four cards per row */
+    gap: 1rem; /* Space between cards */
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .card {
+    background-color: #ffffff;
+    border: 2px solid #0078d4; /* Adds border with primary color */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 1rem;
+    text-align: left;
+    transition: transform 0.2s, box-shadow 0.2s;
+
+    &:hover {
+      transform: scale(1.05); /* Slight zoom effect */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    }
+  }
+
+  .cardTitle {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 0 0.5rem 0;
+    color: #0078d4; /* Primary theme color for titles */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adds ellipsis for long titles */
+  }
+
+  .cardDate {
+    font-size: 0.875rem;
+    color: #666;
+    margin-top: 0.25rem;
+  }
+
+  .EventNoDataimg{
+    width: 100%;
+    max-width: 700px;
+  }
+.DatepickerField{
+  border: 2px solid #0078d4;
+}
+
+.datepicker .ant-picker{
+  width: 200px;
+}
+.datepicker label{
+  margin-right: 15px;
+  font-size: 16px;
+  font-weight: 500;
+}
+  @media (max-width: 1024px) {
+    .cardGrid {
+      grid-template-columns: repeat(2, 1fr); /* Two cards per row on smaller screens */
+    }
+  }
+
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    .cardGrid {
+      grid-template-columns: 1fr; /* One card per row on very small screens */
+    }
+
+    .card {
+      padding: 0.75rem;
+    }
+  }
+}
+
+.DatepickerField .ant-picker-clear {
+  opacity: 1 !important; /* Ensures the clear button is always visible */
+  pointer-events: auto;  /* Ensures the clear button is clickable */
+}
+
+.DatepickerField .ant-picker-clear-icon {
+  visibility: visible !important; /* Makes the icon always visible */
+}
+

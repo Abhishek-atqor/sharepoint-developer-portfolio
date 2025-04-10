@@ -1,0 +1,29 @@
+.status-legend {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .status-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .status-box {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .status-box.completed {
+    background-color: rgba(0, 255, 0, 0.6); /* Green */
+  }
+  
+  .status-box.in-progress {
+    background-color: rgba(75, 192, 192, 0.6); /* Blue (In Progress) */
+  }
+  
+  .status-box.not-started {
+    background-color: rgba(255, 0, 0, 0.6); /* Red */
+  }
+  

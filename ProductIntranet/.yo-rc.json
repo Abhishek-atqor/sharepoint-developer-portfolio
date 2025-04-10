@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": false,
+    "nodeVersion": "16.18.1",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.12.0"
+    },
+    "version": "1.18.2",
+    "libraryName": "product-intranet",
+    "libraryId": "64167cd4-59a9-46ba-b77e-1b791050e1eb",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "ProductIntranet",
+    "solutionShortDescription": "ProductIntranet description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

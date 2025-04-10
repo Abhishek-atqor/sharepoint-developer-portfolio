@@ -1,0 +1,126 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.quickLinkWebpart {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+}
+
+.welcome {
+  text-align: center;
+}
+
+.welcomeImage {
+  width: 100%;
+  max-width: 420px;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: "[theme:link, default:#03787c]";
+    color: var(--link); // note: CSS Custom Properties support is limited to modern browsers only
+
+    &:hover {
+      text-decoration: underline;
+      color: "[theme:linkHovered, default: #014446]";
+      color: var(--linkHovered); // note: CSS Custom Properties support is limited to modern browsers only
+    }
+  }
+}
+.quickLinksContainer {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.quickLinksHeader {
+  // font-size: 24px;
+  // font-weight: bold;
+  // color: #ff4500;
+  margin-bottom: 20px;
+  color: #0f1c4c;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: Segoe UI, Arial, sans-serif;
+}
+
+.quickLinksGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.quickLinkCard {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+  width: 31%;
+  box-sizing: border-box;
+  max-width: 400px; /* Adjust as needed for card width */
+
+  &:hover{
+    border-color:#ff4500 ;
+  }
+
+  @media (max-width: 576px) {
+    width: 100%;
+  }
+   
+}
+
+.quickLinkCard:hover {
+  transform: scale(1.05);
+}
+
+.quickLink {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.quickLinkImageContainer {
+  flex-shrink: 0;
+ 
+  overflow: hidden;
+  border-radius: 50%; /* Makes the image circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px; /* Space between image and title */
+}
+
+.quickLinkImage {
+  width: 35px;
+  height: auto;
+  object-fit: cover; /* Ensures the image covers the circular container */
+}
+
+.quickLinkPlaceholder {
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.quickLinkTitle {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+

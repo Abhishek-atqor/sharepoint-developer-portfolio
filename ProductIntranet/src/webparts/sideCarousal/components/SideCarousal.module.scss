@@ -1,0 +1,123 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.sideCarousal {
+  /* General layout */
+  .carouselContainer {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .carouselWrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carouselItem {
+    position: relative;
+    width: 100%; 
+  }
+
+  .carouselImage {
+    width: 100%;
+    height: auto; 
+  }
+
+  .textOverlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 300px;
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  .textOverlay h4 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+  }
+
+  .textOverlay span {
+    font-size: 0.9rem;
+  }
+
+  .prevButton,
+  .nextButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 1000;
+  }
+
+  .prevButton {
+    left: 10px;
+  }
+
+  .nextButton {
+    right: 10px;
+  }
+
+  .prevButton:hover,
+  .nextButton:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  /* For mobile devices */
+  @media (max-width: 768px) {
+    .carouselImage {
+      height: 400px; 
+    }
+
+    .textOverlay {
+      max-width: 80%; 
+      font-size: 0.8rem; 
+    }
+
+    .textOverlay h4 {
+      font-size: 1rem; 
+    }
+
+    .textOverlay span {
+      font-size: 0.8rem; 
+    }
+
+    .prevButton,
+    .nextButton {
+      padding: 8px;
+      font-size: 1.5rem; 
+    }
+  }
+
+  @media (max-width: 480px) {
+    .carouselImage {
+      height: 380px; 
+    }
+
+    .textOverlay {
+      max-width: 70%; 
+    }
+
+    .prevButton,
+    .nextButton {
+      padding: 6px;
+      font-size: 1rem; 
+    }
+  }
+}
+
+.spinnerContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
